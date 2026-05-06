@@ -16,7 +16,11 @@ Opcodes:
 - `pow` raises the first operand to the second operand. If either is a string, it returns NaN.
 - `root` takes the first operand-root of the second operand. If either is a string, it returns NaN.
 - `neg` negates the first operand. If it is a string, it reverses it instead.
+- `sign` gives you the sign of the provided number.
+- `clamp` clamps the first number between the second and third numbers as bounds.
+- `test` tests for a condition in the format `op1 operator (op2)`, where the operators are `!=`, `=`/`==`, `<`, `>`, `<=`, `>=`, `mul` (is op1 a multiple of op2?), `safe` (is op1 a safe number?), `num` (is op1 a number?), `int`, and `float`.
 - `goto` changes the program counter to that line (the counter starts at 1).
+- `gotoif` is a conditional goto; it tests for a condition using the `test` command. If it succeeds, jump to the program counter (provided as the last argument).
 - `write` writes the text on the screen. If the number of lines exceeds the possible amount, it clears.
 - `import` runs the provided script without the file extension.
 - `sleep` sleeps for that amount of seconds.
@@ -32,7 +36,7 @@ To use it on an OS, create an archive named `PigeonScript` with the main script 
 
 ### Demo
 
-As of v0.1.0b, the demo version has been removed, meaning you can only demo v0.1.0a. It may be readded in a future release.
+To demo PigeonScript, you can do so at [this page](https://thepigeonsbehindyou.github.io/PigeonScript/PigeonScript-demo.html). Current demo version: `v0.1.0a`
 
 ## Release Cycle
 
