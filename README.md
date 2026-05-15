@@ -10,7 +10,7 @@ Opcodes:
 
 - `add` adds or joins two operands together.
 - `sub` subtracts two operands from each other. If either is a string, it will remove the first occurance of the second operand from the first using RegEx.
-- `gsub` is like `sub`, except it removes all occurances of the second operand.
+- `gsub` is like the string case of `sub`, except it removes all occurances of the second operand.
 - `mul` multiplies two operands together. If either is a string with one being a number, the string will be repeated by the other operand, otherwise if they are both strings they will be joined.
 - `div` divides the first operand by the second operand. If either is a string, it returns NaN.
 - `pow` raises the first operand to the second operand. If either is a string, it returns NaN.
@@ -27,6 +27,7 @@ Opcodes:
 - `set` sets the variable named by the first operand to the second operand.
 - `playsound` plays the sound given from the URL until done.
 - `startsound` starts the sound given from the URL.
+- `read` takes the user input using the provided prompt.
 
 To use variables in instructions, use `$VARIABLE_NAME`. It will only work at the start of an opcode as PigeonScript only parses the beginning of the opcode and not the middle or end. The results of operations will be stored in `$RESULT`.
 
@@ -36,7 +37,7 @@ To use it on an OS, create an archive named `PigeonScript` with the main script 
 
 ### Demo
 
-To demo PigeonScript, you can do so at [this page](https://thepigeonsbehindyou.github.io/PigeonScript/PigeonScript-demo.html). Current demo version: `v0.1.0a`
+To demo PigeonScript, you can do so at [this page](https://thepigeonsbehindyou.github.io/PigeonScript/PigeonScript-demo.html). Current demo version: `v0.1.0d`
 
 ## Release Cycle
 
