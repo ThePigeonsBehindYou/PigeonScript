@@ -25,6 +25,7 @@ Opcodes:
 - `import` runs the provided script without the file extension.
 - `sleep` sleeps for that amount of seconds.
 - `set` sets the variable named by the first operand to the second operand.
+    - **NOTE:** If you want to set a variable named `$VARIABLE_NAME` to `variable_value`, you would use `VARIABLE_NAME` without the dollar sign as that would invoke the variable expression which can cause bugs. This behavior is akin to the `VAR="..."` expression in bash.
 - `playsound` plays the sound given from the URL until done.
 - `startsound` starts the sound given from the URL.
 - `read` takes the user input using the provided prompt.
